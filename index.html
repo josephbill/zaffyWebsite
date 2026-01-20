@@ -155,6 +155,53 @@
             font-size: clamp(1rem, 2vw, 1.15rem);
         }
 
+        .merchants-section {
+            background: var(--dark-light);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            margin: 4rem auto;
+            max-width: 900px;
+        }
+
+        .merchants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .merchant-card {
+            background: var(--dark);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(99,102,241,0.2);
+            text-align: center;
+        }
+
+        .merchant-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .merchant-card a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            word-break: break-word;
+        }
+
+        .merchant-card a:hover {
+            color: var(--primary);
+        }
+
+        .merchant-card p {
+            margin-top: 1rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -296,9 +343,9 @@
             <p>Zaffy automatically detects affiliate fraud, enforces compliance, and protects payouts in real time without the need of manual rules.</p>
             <div class="hero-cta">
                 <a class="btn btn-primary calendly-open">Book Live Demo</a>
-                <a href="https://zaffy.lovable.app" class="btn btn-outline">How it works!</a>
+                <a href="https://zaffy.lovable.app" class="btn btn-outline">Zaffy Onboarding</a>
             </div>
-            <div class="hero-note">Pick a time. Experience Zaffy.</div>
+            <div class="hero-note">No calls. Pick a time. See the product.</div>
         </div>
         <div id="lottie-dashboard"></div>
     </div>
@@ -327,6 +374,20 @@
     </div>
 </section>
 
+<section class="merchants-section">
+    <h2>Current Merchant Stores Using Zaffy</h2>
+    <div class="merchants-grid">
+        <div class="merchant-card">
+            <h4>Booking Kiosk</h4>
+            <a href="https://booking-kiosk.com" target="_blank">booking-kiosk.com</a>
+        </div>
+        <div class="merchant-card">
+            <h4>World's Greatest Rejuvenation</h4>
+            <a href="https://www.theworldsgreatestrejuvenation.com/" target="_blank">theworldsgreatestrejuvenation.com</a>
+        </div>
+    </div>
+</section>
+
 <section class="cta-section">
     <h2>See Zaffy in Action</h2>
     <p>Explore how affiliate fraud is detected and blocked automatically.</p>
@@ -335,7 +396,7 @@
 
 <footer>
     <div class="logo">Zaffy</div>
-    <p style="color:var(--text-muted); margin-top:1rem;">AI-powered affiliate fraud protection.</p>
+    <p style="color:var(--text-muted); margin-top:1rem;">AI-powered affiliate fraud protection for Shopify</p>
     <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--text-muted);">© 2026 Zaffy. All rights reserved.</p>
 </footer>
 
